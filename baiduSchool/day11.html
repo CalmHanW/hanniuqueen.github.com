@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width: 100%;
+			height: 200%;
+			overflow: hidden;
+		}
+		.box details{
+			margin-top: -200px;
+			height: 200px;
+			background: #f9f;
+		}
+		.box details:first-child{
+			margin: 0;
+		}
+		.box summary{
+			float: left;
+			width: 50%;
+			height: 40px;
+			background: #9f9;
+			line-height: 40px;
+			cursor:pointer; /*光标呈现为指示链接的指针（一只手）*/
+		}
+		.box details>div{
+			float: left;
+			width: 100%;
+			height: 200px;
+			margin-top:-40px;
+			background: #99f;
+		}
+		.box details+div{
+			margin-top: -160px;
+			padding: 0.5em;
+		}
+		.box p{
+			margin: 0 auto 0.5em;
+			text-indent: 2em;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<details>
+			<summary>森林</summary>
+			<div>
+				<details>
+					<summary>吃了再说</summary>
+					<div>
+						<p>吃饱的你感觉玩累了，于是回家睡觉了</p>
+						<p>一天过去了</p>
+					</div>
+				</details>
+				<details>
+					<summary>先去别的地方看看吧</summary>
+					<div>
+						<p>你迷路了，而且花了很长时间都找不到食物和水，无法再忍受的你啃起了树皮，谁知道这棵树居然有毒。</p>
+						<p>你挂了</p>
+					</div>
+				</details>
+			</div>
+		</details>
+	</div>
+	<div class="sidebor">
+		<div id="bav">woshiwanghan</div>
+	</div>
+</body>
+</html>
